@@ -68,4 +68,15 @@ function calculateNotes(bill, cash){
     
 }
 
+function compare(remainder, noteAmt, index){
+
+    if(remainder >= noteAmt){
+        let notes = Math.floor(remainder/noteAmt);
+        remainder = remainder - notes*noteAmt;
+        noOfNotes[index].innerText = `${notes}`;
+    }
+    return remainder
+}
+
+
 
