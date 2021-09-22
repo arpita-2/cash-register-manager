@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+
+:root{
+    --primary-color: #ffccff;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.section{
+
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+
+}
+h1, p{
+    color: var(--primary-color);
+}
+.label{
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem 0.5rem;
+
+}
+
+
+input{
+    width: 100%;
+    padding: 1rem;
+    height: 50px;
+    display: block;
+    border: none;
+}
+
+#nextBtn{
+    display: block;
+    margin: auto;
+    padding:0.7rem 1rem;
+    font-size:large;
+    color:var(--primary);
+    font-family:'Poppins',sans-serif;
+    font-weight: 400;
+    border: 5px solid var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: 1s;
+    background-color: #009999;
+
+
+}
+
+#nextBtn:hover{
+    box-shadow: 0 5px 50px 0 #94b8b8 inset, 0 5px 50px 0 #94b8b8,
+    0 5px 50px 0 #94b8b8 inset, 0 5px 50px 0 #94b8b8;
+}
+
+
+
+
+
+#checkBtn{
+    display: block;
+    margin: auto;
+    padding:0.7rem 1rem;
+    font-size:large;
+    color:var(--primary);
+    font-family:'Poppins',sans-serif;
+    font-weight: 400;
+    border: 5px solid var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: 1s;
+    background-color:#009999;
+
+}
+
+#checkBtn:hover
+{
+    box-shadow: 0 5px 50px 0 #94b8b8 inset, 0 5px 50px 0 #94b8b8,
+    0 5px 50px 0 #94b8b8 inset, 0 5px 50px 0 #94b8b8;
+
+}
+
+cashGivenInput{
+    display: none;
+}
+.changeReturn{
+    display: none;
+}
+.errorMsg{
+    padding-top: 1rem;
+    color:black;
+}
+#output{
+    margin: 1rem 0;    
+}
+
+#output table, th, td{
+    padding: 0.2rem;
+    color: black;
+    background-color:var(--faint-green);
+    border: 2px solid var(--dark-green) ;
+    border-collapse: collapse;
+}
+.noOfNotes{
+    background-color:white;
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+th,td{
+    word-wrap: break-word;
+}
+
+footer{
+    text-align: center;
+    padding-top: 1rem;
+
+}
+
