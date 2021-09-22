@@ -27,3 +27,27 @@ nextBtn.addEventListener('click', ()=>{
         showError("Enter valid bill amount");
     }
 } )
+
+checkBtn.addEventListener('click', ()=>{
+    clearNoOfNotes();
+    hideError();
+    //error handling
+    let billAmtValue= Number(billAmt.value);
+    let cashGivenValue= Number(cashGiven.value);
+
+    if(billAmtValue>0 && cashGivenValue>0){
+
+        if(!Number.isInteger(cashGivenValue)){
+            showError("Enter valid amount in cash given field");
+            return;
+        }
+        if(billAmtValue > cashGivenValue){
+            showError("Cash is less than bill, please enter right amount");
+            return;
+        }
+        //if input valid calculate no. of notes
+        calculateNotes(billAmtValue, cashGivenValue);
+    } else{
+        showError("Enter valid bill amount and cash given to continue");
+        }
+})
