@@ -51,3 +51,21 @@ checkBtn.addEventListener('click', ()=>{
         showError("Enter valid bill amount and cash given to continue");
         }
 })
+
+
+function calculateNotes(bill, cash){
+    let returnAmt = cash-bill;
+    
+    if(returnAmt<1){
+        showError("No amount should be returned");
+        return;
+    }
+    changeReturnDiv.style.display = "block";
+
+    for(let i=0; i<arrayNoteAmt.length; i++){
+        returnAmt= compare(returnAmt, arrayNoteAmt[i], i);
+    }
+    
+}
+
+
