@@ -78,5 +78,22 @@ function compare(remainder, noteAmt, index){
     return remainder
 }
 
+//if check button clicked without refreshing the page, clear the no of notes values on the screen
+function clearNoOfNotes(){
+    for(let notes of noOfNotes){
+        notes.innerText = "";
+    }
+}
+
+function showError(text){
+    errorDiv.style.display = "block";
+    errorDiv.innerText= text;
+    changeReturnDiv.style.display = "none";
+}
+
+function hideError(){
+    errorDiv.style.display = "none";
+}
+
 
 
