@@ -10,3 +10,7 @@ const output= document.querySelector("#output");
 
 const nextBtn = document.querySelector("#nextBtn");
 const checkBtn = document.querySelector("#checkBtn");
+
+const noOfNotes= document.querySelectorAll(".noOfNotes");
+
+const arrayNoteAmt = [2000, 500, 100, 20, 10, 5, 1];
