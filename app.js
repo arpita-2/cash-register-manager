@@ -14,3 +14,16 @@ const checkBtn = document.querySelector("#checkBtn");
 const noOfNotes= document.querySelectorAll(".noOfNotes");
 
 const arrayNoteAmt = [2000, 500, 100, 20, 10, 5, 1];
+
+
+nextBtn.addEventListener('click', ()=>{
+    hideError();
+    if(Number(billAmt.value)>0){
+
+        nextBtn.style.display = "none";
+        cashGivenDiv.style.display = "block";
+    }
+    else{
+        showError("Enter valid bill amount");
+    }
+} )
